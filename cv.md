@@ -1,12 +1,27 @@
-# Jenu Varghese Chacko
+---
+title: "Curriculum vitae"
+permalink: /cv/
+classes: cv-page
+toc: true
+toc_label: "Sections"
+toc_sticky: true
+excerpt: "Research appointments, publications, methods and academic service of Jenu Varghese Chacko."
+---
 
-Scientist · Optics and Imaging
+<div class="cv-header" markdown="1">
+
+**Jenu Varghese Chacko** · Scientist, Optics and Imaging
+{: .cv-header__name}
 
 [Cell Imaging](https://cellimaging.wisc.edu/) · [Laboratory for Optical and Computational Instrumentation (LOCI)](https://loci.wisc.edu/) · University of Wisconsin–Madison
 
 I specialize in optical instrumentation and data-driven biomedical imaging, including microscope development and autofluorescence techniques for assessing tissue metabolism.
 
 [Email](mailto:jenu.chacko@wisc.edu) · [GitHub](https://github.com/jenuc) · [LinkedIn](https://www.linkedin.com/in/jenuc) · [ORCID](https://orcid.org/0000-0002-6676-0358) · [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=Chacko%20JV&cauthor_id=30296355) · [Publications on Google Scholar](https://scholar.google.com/citations?user=fLnqockAAAAJ&hl=en) · [Peer review record](https://www.webofscience.com/wos/author/record/N-1498-2018)
+
+<button type="button" class="btn btn--primary btn--small no-print" onclick="window.print()">Print / save PDF</button>
+
+</div>
 
 ## Education
 
@@ -54,7 +69,7 @@ Full publication list and citation record: [Google Scholar](https://scholar.goog
 - [Single–particle analysis unveils dynamics of parvovirus capsid passage through nuclear pore complex.](https://doi.org/10.1038/s41598-018-19582-w) Mäntylä, E. & Chacko, J.V., Aho, V., Parrish, C.R., Shahin, V., Kann, M., Digman, M.A., Gratton, E., and Vihinen-Ranta, M. Scientific Reports, 2018.
 - [Cellular level nanomanipulation using atomic force microscope aided with superresolution imaging.](https://www.spiedigitallibrary.org/journals/Journal-of-Biomedical-Optics/volume-19/issue-10/105003/Cellular-level-nanomanipulation-using-atomic-force-microscope-aided-with-superresolution/10.1117/1.JBO.19.10.105003.short) Chacko, J.V., Harke, B., Canale, C., and Diaspro, A. J. Biomed. Opt. 19(10) 105003. 2014.
 - [Probing cellular structures by coupling optical super-resolution and atomic force microscopy techniques for a correlative approach.](https://onlinelibrary.wiley.com/doi/abs/10.1002/cm.21139) Chacko, J.V., Zanacchi, F.C., and Diaspro, A. Cytoskeleton (Hoboken, NJ); 2013.
-- [Sub-Diffraction Nano Manipulation Using STED AFM](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066608) Chacko J.V., Canale, C., Harke, B., and Diaspro, A. PLoS ONE 8(6), 2013.
+- [Sub-Diffraction Nano Manipulation Using STED AFM](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066608) Chacko J.V., Canale, C., Harke, B., and Diaspro, A. PLoS ONE 8(6), 2013.
 - [A novel nanoscopic tool by combining AFM with STED microscopy](https://link.springer.com/article/10.1186/2192-2853-1-3) Harke, B., Chacko, J.V., Haschke, H., Canale, C. and Diaspro, A. Optical Nanoscopy 1, article 3 (2012).
 
 ## Book chapters
@@ -77,11 +92,14 @@ Full publication list and citation record: [Google Scholar](https://scholar.goog
 
 ## Selected conference presentations
 
-- [Autofluorescence lifetime imaging with low photon budget  Optical Biopsy XXI: Toward Real-Time Spectroscopic Imaging and Diagnosis, SPIE Photonics West: PC123730E (Mar 6 2023).](https://doi.org/10.1117/12.2650275) 
-- [Hyper-dimensional Autofluorescence Imaging  Multiphoton Microscopy in the Biomedical Sciences XX SPIE Photonics West BIOS: Paper 11244-112 Feb 2020](https://spie.org/PWB/conferencedetails/multiphoton-microscopy) 
-- [A Novel Anisotropy Imaging Technique for NAD(P)H Autofluorescence Microscopy and Microanalysis Meeting 2019 : V2,S2, August 2019](https://doi.org/10.1017/S1431927619006962) 
-- [STED-AFM: Tip Probing Enhanced by Super-Resolved Targeting. Biophysical Journal Society Meeting 2014 : BPJ, 102 (2012): 224](https://doi.org/10.1016/j.bpj.2011.11.1231) 
+- [Autofluorescence lifetime imaging with low photon budget  Optical Biopsy XXI: Toward Real-Time Spectroscopic Imaging and Diagnosis, SPIE Photonics West: PC123730E (Mar 6 2023).](https://doi.org/10.1117/12.2650275)
+- [Hyper-dimensional Autofluorescence Imaging  Multiphoton Microscopy in the Biomedical Sciences XX SPIE Photonics West BIOS: Paper 11244-112 Feb 2020](https://spie.org/PWB/conferencedetails/multiphoton-microscopy)
+- [A Novel Anisotropy Imaging Technique for NAD(P)H Autofluorescence Microscopy and Microanalysis Meeting 2019 : V2,S2, August 2019](https://doi.org/10.1017/S1431927619006962)
+- [STED-AFM: Tip Probing Enhanced by Super-Resolved Targeting. Biophysical Journal Society Meeting 2014 : BPJ, 102 (2012): 224](https://doi.org/10.1016/j.bpj.2011.11.1231)
 
 ## Patent-related work
 
 - Siryaporn, A., Digman, M., Chacko, J.V., Perinbam, K., Kannan, A., Hochbaum, A. and Whiteson, K. The Regents of the University of California, 2021. Compositions and methods for inhibiting bacterial virulence and Fluorescence Lifetime Imaging Microscopy-based device and method for antibiotic susceptibility testing.
+
+Curriculum vitae · Editorial service updated October 2026 · Review count reported as of October 2025.
+{: .cv-updated}

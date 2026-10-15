@@ -1,0 +1,125 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+/* Palette carried over from the previous site; these override the skin defaults */
+$background-color: #f5f3ec;
+$text-color: #1b302f;
+$muted-text-color: #546660;
+$primary-color: #14665b;
+$link-color: #14665b;
+$link-color-hover: #0b352f;
+$link-color-visited: #14665b;
+$border-color: #d8ded5;
+$code-background-color: #ecebe3;
+$form-background-color: #ecebe3;
+$footer-background-color: #ebe8de;
+$masthead-link-color: #1b302f;
+$masthead-link-color-hover: #14665b;
+$focus-color: #b86428;
+$header-font-family: Georgia, "Times New Roman", serif;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* ---------- Site additions ---------- */
+
+.home-lead {
+  font-size: 1.1em;
+  max-width: 42em;
+}
+
+.feature__wrapper {
+  margin-bottom: 1em;
+
+  .archive__item-teaser img {
+    border-radius: 6px;
+  }
+}
+
+.feature__item {
+  margin-bottom: 1em;
+}
+
+.news-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: 5.5em 1fr;
+    gap: 0.75em;
+    margin: 0;
+    padding: 0.6em 0;
+    border-top: 1px solid $border-color;
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+
+  time {
+    padding-top: 0.15em;
+    color: $muted-text-color;
+    font-size: $type-size-6;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+
+.cv-header {
+  margin-bottom: 2em;
+
+  p {
+    margin: 0 0 0.6em;
+  }
+
+  .cv-header__name {
+    font-family: $header-font-family;
+    font-size: $type-size-4;
+  }
+}
+
+.cv-updated {
+  margin-top: 3em;
+  color: $muted-text-color;
+  font-size: $type-size-6;
+}
+
+@media print {
+  .cv-page .page__title {
+    display: none;
+  }
+
+  .cv-page .page__content {
+    font-size: 10.5pt;
+    line-height: 1.45;
+
+    h2 {
+      margin: 1.1em 0 0.4em;
+      font-size: 14pt;
+      break-after: avoid;
+    }
+
+    li {
+      margin-bottom: 0.3em;
+    }
+  }
+
+  .cv-page .cv-header .cv-header__name {
+    font-size: 20pt;
+  }
+
+  .cv-page .page__content a[href]:after {
+    content: "";
+  }
+
+  .cv-page .page__content a {
+    color: #000;
+    text-decoration: none;
+  }
+}

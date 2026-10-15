@@ -1,0 +1,91 @@
+# Site
+title: "Jenu Varghese Chacko"
+title_separator: "|"
+description: "Optical instrumentation, fluorescence lifetime imaging and open microscopy tools. Jenu Varghese Chacko, LOCI, University of Wisconsin–Madison."
+url: "https://jenuchacko.github.io"
+baseurl: ""
+repository: "jenuchacko/jenuchacko.github.io"
+locale: "en-US"
+
+# Theme (built by GitHub Pages; pin the version so the site never changes underneath you)
+remote_theme: "mmistakes/minimal-mistakes@4.28.1"
+minimal_mistakes_skin: "default"   # colours are set in assets/css/main.scss
+search: false
+breadcrumbs: false
+teaser: /assets/images/teasers/research.svg
+
+author:
+  name: "Jenu Varghese Chacko"
+  avatar: "/assets/images/profile.jpg"
+  bio: "Scientist · Optics and Imaging, LOCI, University of Wisconsin–Madison"
+  location: "Madison, WI"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:jenu.chacko@wisc.edu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jenuc"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=fLnqockAAAAJ&hl=en"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-6676-0358"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jenuc"
+    - label: "PubMed"
+      icon: "fas fa-fw fa-book-medical"
+      url: "https://pubmed.ncbi.nlm.nih.gov/?term=Chacko%20JV&cauthor_id=30296355"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jenuc"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-6676-0358"
+
+atom_feed:
+  hide: true
+
+collections:
+  research:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      related: false
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      related: false
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github
+  - docs
+  # Leftovers from the previous single-page site; safe to delete from the repo
+  - build.py
+  - template.html
+  - index.html

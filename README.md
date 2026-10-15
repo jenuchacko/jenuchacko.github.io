@@ -1,26 +1,41 @@
-# Jenu Varghese Chacko CV website
+# jenuchacko.github.io
 
-A static website for https://jenuchacko.github.io with an editable CV and a printable view. No Python packages or web framework are needed.
+Personal site of Jenu Varghese Chacko, built with Jekyll and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme (pinned to 4.28.1 in `_config.yml`). GitHub builds and publishes it on every push to `main` through `.github/workflows/update-cv.yml`.
 
-## Review before publishing
+## Layout
 
-This draft uses the supplied CV records through October 2025. Confirm the current appointment, public email, editorial roles and any newer work. Phone numbers, street address and personal email have been omitted. The supplied patent entry combines wording without patent identifiers; verify and split it into individual records if appropriate. The 2014 STED-AFM conference citation includes a 2012 journal reference in the source; confirm that date. Publication metadata and author contributions have been retained from the source rather than independently verified. Add confirmed Scholar and ORCID URLs when available.
+```
+_config.yml            site settings, sidebar profile and links
+_data/navigation.yml   top menu (Research · Interactive · CV)
+_data/news.yml         news items on the home page (newest first)
+index.md               home page
+cv.md                  CV (plain Markdown; has a Print / save PDF button)
+research.md            research index (cards built from _research/)
+_research/*.md         one page per research theme; `order:` sets card order
+interactive/index.md   widget gallery
+interactive/*.html     self-contained widgets (no front matter)
+assets/css/main.scss   colours and small style additions
+assets/images/         profile photo and card images
+```
 
-## Publish using the GitHub website
+## Common edits
 
-1. Sign in with your existing `jenuc` account and open https://github.com/jenuchacko and check whether a repository named `jenuchacko.github.io` already exists. If it exists, inspect and back it up before replacing files.
-2. If absent, create a public repository named exactly `jenuchacko.github.io`, owned by the `jenuchacko` organization. Initialize it with a README so the main branch exists.
-3. Extract the ZIP. In the repository choose **Add file â†’ Upload files**. Upload the contents of this folder, not the enclosing folder. `index.html` must be at the repository root. Commit to `main`.
-4. The `.github` folder and `.nojekyll` file may be hidden or skipped by drag-and-drop. For automatic rebuilding, use **Add file â†’ Create new file**, name it `.github/workflows/update-cv.yml`, and paste the matching local workflow contents. Create an empty `.nojekyll` file at the root if it did not upload. The initial static site still works without the rebuild workflow.
-5. Open **Settings â†’ Pages â†’ Build and deployment**. Choose **GitHub Actions** as the source. Open the Actions tab and run **Publish CV** if a deployment has not started.
-6. Wait for deployment; GitHub says changes can take up to 10 minutes. Open https://jenuchacko.github.io. Check the mobile view, contact email, publication text and print output.
+- **CV:** edit `cv.md` on GitHub (pencil icon) and commit. Keep sections in reverse chronological order.
+- **News:** add an entry at the top of `_data/news.yml`.
+- **Research theme:** copy a file in `_research/`, change `title`, `excerpt`, `order` and `header.teaser`.
+- **Widget:** add a self-contained `.html` file to `interactive/` (no front matter, so Jekyll copies it untouched), then add a card to `feature_row` in `interactive/index.md`.
 
-## Update the running CV
+## Preview locally (optional)
 
-Open `cv.md` in GitHub, click the pencil, edit and commit to `main`. The Rebuild CV action regenerates `index.html` and commits it. GitHub Pages then publishes it. If the action fails because repository policies prevent writing, run `python build.py` locally and upload the resulting `index.html` alongside the updated `cv.md`. No packages are required.
+```
+bundle install
+bundle exec jekyll serve
+```
 
-Keep appointments and publications in reverse chronological order. Add new work as it happens and update the content date in `template.html` after reviewing the CV. Edit `template.html` for colors, layout or contact navigation; edit `cv.md` for content. The print button opens your browser's print dialog, where you can save a PDF.
+Then open http://localhost:4000.
 
-The site is public when deployed. Git history preserves earlier versions of committed content. Keep private working notes outside the repository.
+## Switching over from the old single-page site
 
-Official instructions: https://docs.github.com/en/pages/quickstart
+1. Delete `index.html`, `build.py`, `template.html` and `.nojekyll` from the repository (the new home page is `index.md`).
+2. Upload or commit everything in this folder, including the hidden `.github` folder.
+3. **Settings → Pages → Build and deployment** should stay on **GitHub Actions**. Watch the **Actions** tab for the "Build and deploy site" run.
